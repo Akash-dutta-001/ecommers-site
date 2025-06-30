@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.eje - Scatch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logout-link {
+            float: right;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: #e53e3e;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .logout-link:hover {
+            background: #c53030;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .sort-by {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .sort-by label {
+            margin-right: 10px;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        .sidebar {
+            float: left;
+            width: 200px;
+            margin-right: 30px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #eee;
+            padding: 15px;
+            text-align: center;
+        }
+        .product-name {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .product-price {
+            color: #333;
+        }
+        .collection-list, .filter-list {
+            list-style: none;
+            padding: 0;
+        }
+        .collection-list li, .filter-list li {
+            margin-bottom: 8px;
+        }
+        .filter-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://localhost:3000/users/logout" class="logout-link">Logout</a>
+    <h1>Scatch</h1>
+    
+    <div class="sort-by">
+        <label>sort by</label>
+        <select>
+            <option>Popular</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+        </select>
+    </div>
+    
+    <hr>
+    
+    <div class="sidebar">
+        <h2>New Collection</h2>
+        <ul class="collection-list">
+            <li>All Products</li>
+            <li>Discounted Products</li>
+        </ul>
+        
+        <div class="filter-title">Filter by:</div>
+        <ul class="filter-list">
+            <li>Availability</li>
+            <li>Discount</li>
+        </ul>
+    </div>
+    
+    <div class="products">
+        <div class="product">
+            <div class="product-name">Clinge Bag</div>
+            <div class="product-price">¥ 1200</div>
+        </div>
+        <div class="product">
+            <div class="product-name">Clinge Bag</div>
+            <div class="product-price">¥ 1200</div>
+        </div>
+        <div class="product">
+            <div class="product-name">Clinge Bag</div>
+            <div class="product-price">¥ 1200</div>
+        </div>
+        <div class="product">
+            <div class="product-name">Clinge Bag</div>
+            <div class="product-price">¥ 1200</div>
+        </div>
+        <div class="product">
+            <div class="product-name">Clinge Bag</div>
+            <div class="product-price">¥ 1200</div>
+        </div>
+        <div class="product">
+            <div class="product-name">Clinge Bag</div>
+            <div class="product-price">¥ 1200</div>
+        </div>
+    </div>
+</body>
+</html>
